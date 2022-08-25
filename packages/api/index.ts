@@ -28,6 +28,42 @@ const games: Game[] = [
     releaseDate: 659163600000,
     reviewScore: 100,
   },
+  {
+    id: 4,
+    title: 'God of War',
+    developer: 'Santa Monica Studio',
+    publisher: 'Sony Interactive Entertainment',
+    director: 'Cory Barlog',
+    releaseDate: 1524196800000,
+    reviewScore: 94,
+  },
+  {
+    id: 5,
+    title: 'Ratchet & Clank: Rift Apart',
+    developer: 'Insomniac Games',
+    publisher: 'Sony Interactive Entertainment',
+    director: 'Marcus Smith & Mike Daly',
+    releaseDate: 1623384000000,
+    reviewScore: 88,
+  },
+  {
+    id: 6,
+    title: 'Sekiro: Shadows Die Twice',
+    developer: 'From Software',
+    publisher: 'Activision',
+    director: 'Hidetaka Miyazaki & Kazuhiro Hamatani',
+    releaseDate: 1553227200000,
+    reviewScore: 90,
+  },
+  {
+    id: 7,
+    title: 'Mega Man X',
+    developer: 'Capcom',
+    publisher: 'Capcom',
+    director: 'Keiji Inafune',
+    releaseDate: 756104400000,
+    reviewScore: 88,
+  },
 ];
 
 /**

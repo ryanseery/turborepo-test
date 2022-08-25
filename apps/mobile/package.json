@@ -1,7 +1,7 @@
 {
   "name": "@seery/mobile",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -14,7 +14,9 @@
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
     "react-native": "0.69.4",
-    "@seery/api": "*"
+    "@seery/api": "*",
+    "@seery/ui": "*",
+    "@seery/types": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
