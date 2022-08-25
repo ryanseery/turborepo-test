@@ -1,10 +1,24 @@
-import { Button } from '@seery/ui';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function Web() {
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    flexGrow: 1,
+    justifyContent: 'center',
+  },
+  text: {
+    alignItems: 'center',
+    fontSize: 24,
+    marginBottom: 24,
+  },
+});
+
+export default function App() {
   return (
-    <div>
-      <h1>Test</h1>
-      <Button />
-    </div>
+    <View style={styles.container}>
+      <Text accessibilityRole="header" style={styles.text}>
+        TEST THIS THING OUT
+      </Text>
+    </View>
   );
 }
