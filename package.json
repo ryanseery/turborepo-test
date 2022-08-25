@@ -11,7 +11,8 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "run:next": "turbo run dev --scope=@seery/web"
+    "run:web": "turbo run dev --scope=@seery/web",
+    "run:mobile": "turbo run dev --scope=@seery/mobile"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
