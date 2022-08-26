@@ -14,10 +14,13 @@
     "next": "12.2.3",
     "react": "18.0.0",
     "react-dom": "^18.2.0",
-    "react-native-web": "^0.13.14"
+    "react-native-web": "^0.13.14",
+    "@seery/api": "*",
+    "@seery/types": "*",
+    "@seery/core": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.12.9",
     "@types/node": "^17.0.12",
     "@types/react": "17.0.48",
     "eslint": "7.32.0",

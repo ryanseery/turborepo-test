@@ -1,4 +1,8 @@
-const withTM = require('next-transpile-modules')(['@seery/ui']);
+const withTM = require('next-transpile-modules')([
+  '@seery/ui',
+  '@seery/core',
+  '@seery/api',
+]);
 
 module.exports = withTM({
   reactStrictMode: true,
