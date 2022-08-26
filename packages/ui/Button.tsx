@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, StyleSheet, Pressable, ViewStyle } from 'react-native';
 
 type Props = {
