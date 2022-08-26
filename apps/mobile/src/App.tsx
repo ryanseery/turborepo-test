@@ -1,8 +1,10 @@
 // Imported
 import { SafeAreaView, StyleSheet, ScrollView, View } from 'react-native';
 import { getGames } from '@seery/api';
-import { GameCard, Filter } from '@seery/ui';
-import { useFilter } from '@seery/core';
+
+// Local
+import { GameCard, Filter } from './components';
+import { useFilter } from './hooks';
 
 export default function App() {
   const games = getGames();
