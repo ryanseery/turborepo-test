@@ -1,17 +1,14 @@
 import { StyleSheet, Text, View, Alert } from 'react-native';
 import { Button, Card, Circle } from '@seery/ui';
 import { Game } from '@seery/types';
+import { useGameProps } from '@seery/core';
 
 type Props = {
   game: Game;
 };
-export default function GameCard({ game }: Props) {
-  const { title, developer, publisher, director, releaseDate, reviewScore } =
-    game;
-
-  // TODO move to core
-  const date = new Date(releaseDate).toDateString();
-  const score = reviewScore.toString();
+export function GameCard({ game }: Props) {
+  const { title, developer, publisher, director, date, score } =
+    useGameProps(game);
 
   const onPress = (gameTitle: string) =>
     Alert.alert(`Selected \n ${gameTitle}`);

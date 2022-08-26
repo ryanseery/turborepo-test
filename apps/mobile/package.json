@@ -16,7 +16,8 @@
     "react-native": "0.69.4",
     "@seery/api": "*",
     "@seery/ui": "*",
-    "@seery/types": "*"
+    "@seery/types": "*",
+    "@seery/core": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

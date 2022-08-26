@@ -1,20 +1,20 @@
 // Imported
 import { SafeAreaView, StyleSheet, ScrollView, View } from 'react-native';
 import { getGames } from '@seery/api';
-
 // Local
-import GameCard from './GameCard';
+import { GameCard, Filter } from './components';
+import { useFilter } from './hooks';
 
 export default function App() {
   const games = getGames();
-
-  console.log(games);
+  const { value, onChangeText, items } = useFilter(games);
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.inner}>
+        <Filter onChangeText={onChangeText} value={value} />
         <ScrollView>
-          {games.map((game, idx) => (
+          {items.map((game, idx) => (
             <GameCard key={idx} game={game} />
           ))}
         </ScrollView>
